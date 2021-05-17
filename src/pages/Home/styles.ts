@@ -21,6 +21,7 @@ export const Title = styled.p`
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 10px;
+  color: #ddd;
 `;
 
 export const Subtitle = styled.p`
