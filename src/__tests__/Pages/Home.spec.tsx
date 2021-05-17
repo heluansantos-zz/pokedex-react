@@ -15,14 +15,4 @@ describe('Home Page', () => {
 
     expect(wrapper).toBeDefined();
   });
-
-  it('const Home Page', () => {
-    const wrapper = render(
-      <AppProvider>
-        <Home />
-      </AppProvider>,
-    );
-
-    expect(wrapper).toBeDefined();
-  });
 });
