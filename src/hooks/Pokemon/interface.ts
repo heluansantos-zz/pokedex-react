@@ -26,6 +26,7 @@ export default interface IPokemonContext {
   resetPokemons: () => void;
   searchPokemon: (name: string) => void;
   setCurrentPokemon: (pokemon: IPokemon) => void;
+  infoPokerdexHistory: () => void;
 }
 
 export interface IObjectKeys {
@@ -55,6 +56,10 @@ export interface IPokemon {
   stats: any[];
   types: any[];
   weight: number;
+}
+
+export interface PokeInfo {
+  info1: string;
 }
 
 export const PokeTypes: IObjectKeys = {

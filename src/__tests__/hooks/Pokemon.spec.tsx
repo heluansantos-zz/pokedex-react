@@ -127,4 +127,18 @@ describe('Pokemon Hooks', () => {
 
     expect(id).toEqual('111');
   });
+
+  it('Should initialize  x at hook Page', () => {
+    const { infoPokerdexHistory } = hook.result.current;
+    const info1 = infoPokerdexHistory();
+
+    expect(info1).toEqual('Os jogos originais de Pokémon são japoneses');
+  });
+
+  it('Should initialize  info001 at hook Page', () => {
+    const { infoPokerdexHistory } = hook.result.current;
+    const info001 = infoPokerdexHistory();
+
+    expect(info001).toEqual(true);
+  });
 });
