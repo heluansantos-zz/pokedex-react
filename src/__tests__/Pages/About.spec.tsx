@@ -3,6 +3,12 @@ import { render, screen } from '@testing-library/react';
 import About from '../../pages/Profile/About';
 
 describe('testing info at About Page', () => {
+  it('Should initialize Profile Page', () => {
+    const wrapper = render(<About />);
+
+    expect(wrapper).toBeDefined();
+  });
+
   it('Should initialize  info at About Page', () => {
     render(<About />);
     expect(
